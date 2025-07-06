@@ -1,17 +1,18 @@
 #
 # Conditional build:
 %bcond_without	python2 # CPython 2.x module
-%bcond_without	python3 # CPython 3.x module
+%bcond_with	python3 # CPython 3.x module (built from python3-ruamel.yaml.spec)
 
 %define		module		ruamel.yaml
 Summary:	YAML 1.2 loader/dumper for Python 2
 Summary(pl.UTF-8):	Biblioteka do wczytywania/zrzucania YAML-a 1.2 dla Pythona 2
 Name:		python-%{module}
+# keep 0.16.x here for python2 support
 Version:	0.16.13
 Release:	1
 License:	MIT
 Group:		Libraries/Python
-#Source0Download: https://pypi.org/simple/ruamel.yaml/
+#Source0Download: https://pypi.org/simple/ruamel-yaml/
 Source0:	https://files.pythonhosted.org/packages/source/r/ruamel.yaml/%{module}-%{version}.tar.gz
 # Source0-md5:	fa6c72a79b9f420628d83c2d50f9e4c7
 URL:		https://pypi.org/project/ruamel.yaml/
