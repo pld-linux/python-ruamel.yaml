@@ -9,7 +9,7 @@ Summary(pl.UTF-8):	Biblioteka do wczytywania/zrzucania YAML-a 1.2 dla Pythona 2
 Name:		python-%{module}
 # keep 0.16.x here for python2 support
 Version:	0.16.13
-Release:	1
+Release:	2
 License:	MIT
 Group:		Libraries/Python
 #Source0Download: https://pypi.org/simple/ruamel-yaml/
